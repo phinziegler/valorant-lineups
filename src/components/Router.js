@@ -4,9 +4,7 @@ import Home from './Home';
 import ErrorPage from './ErrorPage';
 import Icebox from './Icebox';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Agents from "../Agents";
 import Maps from '../Maps';
-import Viper from './Viper';
 
 
 export default function Router() {

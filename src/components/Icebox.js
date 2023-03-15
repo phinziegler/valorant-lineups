@@ -35,10 +35,9 @@ export default class Icebox extends React.Component {
 
     render() {
         return (
-            <>
+            <div>
                 {this.renderAgent(this.state.agent)}
-                {/* {this.state.reroute != "" && <Navigate replace to={this.state.reroute} />} */}
-            </>
+            </div>
 
         )
     }
