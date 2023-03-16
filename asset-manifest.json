@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/valorant-lineups/static/css/main.acfc43a2.css",
-    "main.js": "/valorant-lineups/static/js/main.425749d0.js",
+    "main.js": "/valorant-lineups/static/js/main.fad4d89d.js",
     "index.html": "/valorant-lineups/index.html",
     "main.acfc43a2.css.map": "/valorant-lineups/static/css/main.acfc43a2.css.map",
-    "main.425749d0.js.map": "/valorant-lineups/static/js/main.425749d0.js.map"
+    "main.fad4d89d.js.map": "/valorant-lineups/static/js/main.fad4d89d.js.map"
   },
   "entrypoints": [
     "static/css/main.acfc43a2.css",
-    "static/js/main.425749d0.js"
+    "static/js/main.fad4d89d.js"
   ]
 }
