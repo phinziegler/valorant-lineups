@@ -8,7 +8,7 @@ export default class Viper extends React.Component {
     }
 
     renderMap() {
-        switch(this.props.map) {
+        switch (this.props.map) {
             case Maps.ICEBOX:
                 return this.icebox();
         }
@@ -16,14 +16,25 @@ export default class Viper extends React.Component {
 
     icebox() {
         return (
-            <>
-                <h2>Default Molly</h2>
-                <Lineup 
-                    resultUrl="https://raw.githubusercontent.com/phinziegler/valorant-lineups/master/public/Maps/Icebox/Viper/A/A%20Default%20Molly/A%20Default%20Lineup%20(P1).png"
-                    locationUrl="https://raw.githubusercontent.com/phinziegler/valorant-lineups/master/public/Maps/Icebox/Viper/A/A%20Default%20Molly/A%20Default%20Lineup%20(P1).png" 
-                    lineupUrl="https://raw.githubusercontent.com/phinziegler/valorant-lineups/master/public/Maps/Icebox/Viper/A/A%20Default%20Molly/A%20Default%20Lineup(P2).png"
-                    description="Stand still and shoot" />
-            </>
+            <div>
+                <h1 className="text-center">{"Viper - " + this.props.map}</h1>
+                <ul className="list-group darkened p-5">
+                    <h2>Attack</h2>
+                    <Lineup
+                        resultUrl="https://raw.githubusercontent.com/phinziegler/valorant-lineups/master/public/Maps/Icebox/Viper/Attack/Default%20Molly%20A.png"
+                        locationUrl="https://raw.githubusercontent.com/phinziegler/valorant-lineups/master/public/Maps/Icebox/Viper/Attack/A%20Default%20Lineup%20(P1).png"
+                        lineupUrl="https://raw.githubusercontent.com/phinziegler/valorant-lineups/master/public/Maps/Icebox/Viper/Attack/A%20Default%20Lineup(P2).png"
+                        description="Shoot without moving. Afterwards you can run up the ramp to peak just as the molly applies vulnerability." />
+                    <Lineup
+                        resultUrl="https://raw.githubusercontent.com/phinziegler/valorant-lineups/master/public/Maps/Icebox/Viper/Attack/Cat%20and%20Backsite%20smoke.png"
+                        locationUrl="https://raw.githubusercontent.com/phinziegler/valorant-lineups/master/public/Maps/Icebox/Viper/Attack/A%20Default%20Lineup%20(P1).png"
+                        lineupUrl="https://raw.githubusercontent.com/phinziegler/valorant-lineups/master/public/Maps/Icebox/Viper/Attack/Cat%20and%20backsite%20smoke%20lineup.png"
+                        description="Run, jump, and left-click. This smoke covers vision for anyone on cat, and blocks some backsite angles." />
+                    <h2>Defense</h2>
+                </ul>
+
+
+            </div>
 
         )
     }

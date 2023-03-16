@@ -14,7 +14,7 @@ export default class Icebox extends React.Component {
     }
 
     agentButton(agent) {
-        return <button onClick={() => this.setState({agent: agent})} className="btn btn-success">{agent}</button>
+        return <button onClick={() => this.setState({ agent: agent })} className="btn btn-success">{agent}</button>
     }
 
     agentSelect() {
@@ -25,19 +25,23 @@ export default class Icebox extends React.Component {
     }
 
     renderAgent(agent) {
-        switch(agent) {
+        switch (agent) {
             case Agents.VIPER:
-                return <Viper map={Maps.ICEBOX}/>;
+                return <Viper map={Maps.ICEBOX} />;
             default:
-                return this.agentSelect();
+                return <></>;
         }
     }
 
     render() {
         return (
-            <div>
-                {this.renderAgent(this.state.agent)}
-            </div>
+            <>
+                <div>Select an agent</div>
+                {this.agentSelect()}
+                <div className="page-content">
+                    {this.renderAgent(this.state.agent)}
+                </div>
+            </>
 
         )
     }

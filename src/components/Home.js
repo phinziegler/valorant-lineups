@@ -14,9 +14,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <>
-                {/* {this.state.reroute != "" && <Navigate replace to={this.state.reroute} />} */}
-                <div>This is the home page</div>
-                {/* <button onClick={() => this.setState({ reroute: "/icebox" })}>Icebox</button> */}
+            <div>Select a map</div>
                 <Link className="btn btn-primary" to={Maps.ICEBOX}>{Maps.ICEBOX}</Link>
                 <Outlet></Outlet>
             </>

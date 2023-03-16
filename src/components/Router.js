@@ -5,6 +5,7 @@ import ErrorPage from './ErrorPage';
 import Icebox from './Icebox';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Maps from '../Maps';
+import '../css/App.css';
 
 
 export default function Router() {
