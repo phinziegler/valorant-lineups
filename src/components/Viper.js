@@ -31,6 +31,11 @@ export default class Viper extends React.Component {
                         lineupUrl="https://raw.githubusercontent.com/phinziegler/valorant-lineups/master/public/Maps/Icebox/Viper/Attack/Cat%20and%20backsite%20smoke%20lineup.png"
                         description="Run, jump, and left-click. This smoke covers vision for anyone on cat, and blocks some backsite angles." />
                     <h2>Defense</h2>
+                    <Lineup
+                        resultUrl="https://raw.githubusercontent.com/phinziegler/valorant-lineups/master/public/Maps/Icebox/Viper/Defend/Defense%20Wall.png"
+                        locationUrl="https://raw.githubusercontent.com/phinziegler/valorant-lineups/master/public/Maps/Icebox/Viper/Defend/Defense%20Wall%20P1.png"
+                        lineupUrl="https://raw.githubusercontent.com/phinziegler/valorant-lineups/master/public/Maps/Icebox/Viper/Defend/Defense%20Wall%20P2.png"
+                        description="Walls off the entrance to B site, and makes post plant harder for attackers." />
                 </ul>
 
 
