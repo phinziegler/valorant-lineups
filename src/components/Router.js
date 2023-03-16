@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Home from './Home';
 import ErrorPage from './ErrorPage';
 import Icebox from './Icebox';
@@ -10,7 +10,7 @@ import '../css/App.css';
 
 export default function Router() {
 
-    const router = createBrowserRouter([
+    const router = createHashRouter([
         {
             path:"/",
             element: <Home />,
