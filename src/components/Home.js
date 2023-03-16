@@ -16,6 +16,7 @@ export default class Home extends React.Component {
             <>
             <div>Select a map</div>
                 <Link className="btn btn-primary" to={Maps.ICEBOX}>{Maps.ICEBOX}</Link>
+                <Link className="btn btn-primary" to={Maps.ASCENT}>{Maps.ASCENT}</Link>
                 <Outlet></Outlet>
             </>
 

@@ -1,15 +1,18 @@
 import React from "react";
-import { Link, Navigate } from "react-router-dom";
 import Agents from "../Agents";
 import Maps from "../Maps";
 import Viper from "./Viper";
 
-export default class Icebox extends React.Component {
+/**
+ * PROPS CONTAIN A MAP
+ */
+export default class Map extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
             agent: "",
+            scale: 100
         }
     }
 
@@ -27,7 +30,7 @@ export default class Icebox extends React.Component {
     renderAgent(agent) {
         switch (agent) {
             case Agents.VIPER:
-                return <Viper map={Maps.ICEBOX} />;
+                return <Viper map={this.props.map} />;
             default:
                 return <></>;
         }
@@ -38,7 +41,9 @@ export default class Icebox extends React.Component {
             <>
                 <div>Select an agent</div>
                 {this.agentSelect()}
-                <div className="page-content">
+                <div>Scale</div>
+                <input type="range" onChange={(e) => this.setState({ scale: e.target.value })} step={1} min={0} max={100} value={this.state.scale}></input>
+                <div style={{maxWidth: `${this.state.scale}%`}} className="page-content">
                     {this.renderAgent(this.state.agent)}
                 </div>
             </>

@@ -1,5 +1,6 @@
 const Maps = {
-    ICEBOX: "Icebox"
+    ICEBOX: "Icebox",
+    ASCENT: "Ascent"
 }
 
 export default Maps;
